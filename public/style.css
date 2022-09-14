@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    color: rgb(224, 224, 224);
+    background-color: rgb(194, 182, 182);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: rgb(22, 105, 189);
+}
+#navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(200, 203, 173);
+}
+#usuario {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#usuario img {
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid rgb(224, 224, 224);
+}
+
+#user {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+}
+#user h1 {
+    text-transform: uppercase;
+}
+#carrito {
+    font-size: 24px;
+}
+#productos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+#productos_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.producto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    height: 600px;
+    background-color: rgb(16, 16, 16);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    margin: 30px 20px;
+    text-align: center;
+}
+.producto h1, .producto h2 {
+    transition: color 100ms ease-in;
+}
+.producto:hover h1, .producto:hover h2 {
+    color: rgb(22, 105, 189);
+}
+.producto img {
+    width: 300px;
+    border-radius: 50px;
+}
+.producto button {
+    padding: 10px 15px;
+}
+#carrito_container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+.eliminar {
+    cursor: pointer;
+    color: rgb(150, 13, 13);
+    font-size: 18px;
+    font-weight: 800;
+}
+.eliminar:hover {
+    color: red;
+}
+
+table img {
+    width: 80px;
+}
+table,
+td {
+    text-align: center;
+    border: 1px solid #333;
+}
+th {
+    padding: 0 25px;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
