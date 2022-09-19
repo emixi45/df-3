@@ -11,17 +11,34 @@
 
 </head>
 <body>
-    <div id="navbar">
-        <h1>tecnologia</h1>
-        <a class="btn btn-outline-success me-2" href="/carrito">Carrito</a>
-        <div id="usuario">
-            <img src="<%= usuario.img %>" alt="<%= usuario.username %>">
-            <div id="user">
-                <h1><%= usuario.username %></h1>
-                <h2><%= usuario.email %></h2>
-                <a  class="btn btn-sm btn-outline-secondary" href="/logout">Logout</a>
-            </div>
+    <!-- inicio nav -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <h1>Tecnologia</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/carrito">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+              <div id="usuario">
+                  <div id="user">
+                      <p><%= usuario.email %></p>
+                    </div>  
+                    <img src="<%= usuario.img %>" alt="<%= usuario.username %>">
+            </ul>
+          </div>
         </div>
+      </nav>
+
+    <!-- 
+        fin nav
+     -->
     </div>
     <div id="productos">
         <h1>Productos</h1>

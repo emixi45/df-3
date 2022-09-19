@@ -34,14 +34,16 @@ a:hover {
     width: 100px;
     border-radius: 20px;
     border: 2px solid rgb(224, 224, 224);
+    margin : 2px
 }
 
 #user {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-width: 300px;
+    padding-top: 9px;
 }
 #user h1 {
     text-transform: uppercase;
@@ -127,3 +129,4 @@ tfoot {
     display: flex;
     justify-content: center;
 }
+
