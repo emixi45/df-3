@@ -16,6 +16,7 @@ if(botonEliminar !== '') {
     })
 }
 
+
 for (const boton of botones) {
     boton.addEventListener('click', () => {
         const prod = boton.getAttribute('data-id')

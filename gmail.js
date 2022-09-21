@@ -1,8 +1,8 @@
+
 require('dotenv').config()
 
 const {createTransport} =require('nodemailer')
 const ejs = require('ejs')
-
 const mail = process.env.CORREO
 const PASS = process.env.PASS
 const mail_to =process.argv[2] || process.env.CORREO

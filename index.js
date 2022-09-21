@@ -144,7 +144,10 @@ app.delete('/carrito/:prod', async (req, res) => {
     )
     res.send('Producto eliminado')
 })
-
+app.get('/succes', async (req, res) => {
+    const usuario = await req.user
+    res.render('compra', {usuario})
+})
 
 app.get('/login', (req, res) => {
     if(req.isAuthenticated()) {
