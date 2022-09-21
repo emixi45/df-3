@@ -13,17 +13,7 @@ const { encrypt, compare } = require('./bcrypt')
 const cors = require('cors')
 let productos;
 
-//twilio
-const accountSID = 'ACf82e42a5777e08a7580ada7c060ec6ea';
-const authToken = 'a4f960ce1f37830a84d54b1e764dfef7';
-const client = require ('twilio')(accountSID, authToken);
-client.messages.create({
-    from: 'whatsapp:+14155238886',
-    to: 'whatsapp:+5491132368155',
-    body: 'hola coderhouse'
-})
-    .then(message => console.log(message))
-    .catch(e => console.log(e))
+
 
 // Settings
 app.set('port', process.env.PORT || 3000)
@@ -154,6 +144,7 @@ app.delete('/carrito/:prod', async (req, res) => {
     )
     res.send('Producto eliminado')
 })
+
 
 app.get('/login', (req, res) => {
     if(req.isAuthenticated()) {
